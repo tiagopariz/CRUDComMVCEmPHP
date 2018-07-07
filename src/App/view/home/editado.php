@@ -5,5 +5,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-echo 'index';
+echo '<b>' . $this->mensagem . '</b>';
+echo '<BR>';
+echo $this->detalhe_produto['nome'];
+echo '<BR>';
+echo $this->detalhe_produto['descricao'];
