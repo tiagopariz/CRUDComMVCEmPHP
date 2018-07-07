@@ -1,7 +1,7 @@
 RewriteEngine ON
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php [NC,L,QSA]
+RewriteRule ^(.*)$ init.php [NC,L,QSA]
 
 
 #QSA means that if there's a query string passed with the original URL, it will be appended to the rewrite (olle?p=1 will be rewritten as index.php?url=olle&p=1.
