@@ -1,9 +1,21 @@
 <a href='/incluir'>Incluir Produto</a>
-<br>
-<?php
-foreach($this->produtos as $item) {
-    echo '<br>';
-    echo '<a href=/conteudo?idProduto='.$item['idProduto'].'>'.$item['nome'].'</a>';
-    echo ' - [ <a href=/editar?idProduto='.$item['idProduto'].'>EDITAR</a> ]';
-    echo ' - [ <a href=/remover?idProduto='.$item['idProduto'].'>REMOVER</a> ]';   
-}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Produto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+            foreach($this->produtos as $item) {
+                echo '<tr>';
+                echo '<th scope="row">'.$item['idProduto'].'</th>';
+                echo '<td>'.$item['nome'].'</td>';
+                echo '</tr>';
+            }
+        ?>
+    </tbody>
+</table>
+
