@@ -1,4 +1,3 @@
-<a href='/incluir'>Incluir Produto</a>
 
 <table class="table table-striped">
     <thead>
@@ -14,7 +13,7 @@
                 echo '<tr>';
                 echo '<th scope="row">'.$item['idProduto'].'</th>';
                 echo '<td><a href="/editar?idProduto='.$item['idProduto'].'">'.$item['nome'].'</a></td>';
-                echo '<td><a href="/excluir?idProduto='.$item['idProduto'].'">Excluir</a></td>';
+                echo '<td><a href="/remover?idProduto='.$item['idProduto'].'">Excluir</a></td>';
                 echo '</tr>';
             }
         ?>
